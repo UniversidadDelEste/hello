@@ -20,4 +20,4 @@ _ = gettext.gettext
 print gettext.find('internacional', localedir, None, True)
 
 # el mensaje a traducir debe ser escrito tal cual 
-print _('hello, world')     
+print _('Hello, world!')     

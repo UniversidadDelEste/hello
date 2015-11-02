@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-21 18:24-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 16bit\n"
+
+#: hello.py:67
+msgid "Hello, world!"
+msgstr "Hola, mundo!"
+
+#: hello.py:80
+msgid "-t, --traditional       use traditional greeting"
+msgstr "-t, --traditional       usa el saludo tradicional"
+
+#: hello.py:83
+msgid "-g, --greeting=TEXT     use TEXT as the greeting message"
+msgstr "-g, --greeting=TEXTO     usa TEXTO como el mensaje de saludo"
+
+#: hello.py:86
+msgid "-v, --version       display version information and exit"
+msgstr "-v, --version       muestra la informacion de la version y sale"
+
+#: hello.py:91
+msgid "hello, world"
+msgstr "hola, mundo"
+
+#: hello.py:106
+msgid ""
+"Copyright (C) {} Free Software Foundation, Inc.\n"
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+"html>\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law."
+msgstr ""
+"Copyright (C) {} Free Software Foundation, Inc.\n"
+"Licencia GPLv3+: GNU GPL version 3 o posterior <http://gnu.org/licenses/gpl."
+"html>\n"
+"Este es un software libre: eres libre de cambiarlo y redistribuirlo.\n"
+"NO hay garantía, en la medida por la ley."
+
