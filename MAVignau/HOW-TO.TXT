@@ -1,0 +1,76 @@
+instrucciones
+gettext:
+
+1- xgettext -d pyhello -o pyhello.pot pyhello.py
+se genera: pyhello.pot 
+cambiar charset=CHARSET\n por charset=UTF-8\n
+2- copiar pot a $localedir/$language/LC_MESSAGES/$domain.po
+ejemplo: locale/es_AR/LC_MESSAGES/pyhello.po
+3- traducir
+4- compilar 
+cd locale/es_AR/LC_MESSAGES/
+msgfmt -o pyhello.mo pyhello.po
+5- correr python src/pyhello.py
+
+
+
+
+
+
+------------------------------------------------------------
+touch configure.ac Makefile.am AUTHORS ChangeLog NEWS README 
+mkdir src
+cd src
+touch Makefile.am
+
+------------------------
+EDIT configure.ac
+
+AC_INIT([pyHELLO], [0.1])
+
+AM_INIT_AUTOMAKE
+AM_PATH_PYTHON([2.5])
+
+AC_CONFIG_FILES([Makefile src/Makefile ])
+
+AC_OUTPUT
+-------------
+> aclocal
+#The aclocal command will also create the autom4te.cache folder which is a cache used by many of the autotools. You do not need to worry about it. 
+> autoconf
+#Two new files will be created: config.log and configure
+
+------------------------
+EDIT Makefile.am
+
+SUBDIRS = src
+
+
+------------------------
+EDIT src/Makefile.am
+
+bin_SCRIPTS = pyhello
+CLEANFILES = $(bin_SCRIPTS)
+EXTRA_DIST = pyhello.py
+
+do_substitution = sed -e 's,[@]pythondir[@],$(pythondir),g' \
+	-e 's,[@]PACKAGE[@],$(PACKAGE),g' \
+	-e 's,[@]VERSION[@],$(VERSION),g' 
+
+pyhello: pyhello.py Makefile
+	$(do_substitution) < $(srcdir)/pyhello.py > pyhello
+	chmod +x pyhello
+
+pyhello_PYTHON = pyhello.py
+
+pyhellodir = $(pythondir)/pyhello
+
+-------------
+> automake --add-missing
+#automake command will create Makefile.in files from your Makefile.am
+>./configure
+#will be a Makefile file for every Makefile.in file
+> make
+#After running make you should see src/pyhello
+> sudo make install
+#the executable Python script src/pyhello will be copied to /usr/local/bin and the entire src/pyhello/ folder will be copied to /usr/local/lib/python<YOUR PYTHON VERSION>/site-packages/. 

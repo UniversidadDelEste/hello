@@ -1,0 +1,15 @@
+bin_SCRIPTS = hello
+CLEANFILES = $(bin_SCRIPTS)
+EXTRA_DIST = hello.py
+
+do_substitution = sed -e 's,[@]pythondir[@],$(pythondir),g' \
+	-e 's,[@]PACKAGE[@],$(PACKAGE),g' \
+	-e 's,[@]VERSION[@],$(VERSION),g' 
+
+hello: hello.py Makefile
+	$(do_substitution) < $(srcdir)/hello.py > hello
+	chmod +x hello
+
+hello_PYTHON = hello.py
+
+hellodir = $(pythondir)/hello

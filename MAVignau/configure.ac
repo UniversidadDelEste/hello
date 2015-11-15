@@ -1,0 +1,8 @@
+AC_INIT([pyHELLO], [0.1])
+
+AM_INIT_AUTOMAKE
+AM_PATH_PYTHON([2.5])
+
+AC_CONFIG_FILES([Makefile src/Makefile])
+
+AC_OUTPUT

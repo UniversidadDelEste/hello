@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright 2015 Ing María Andrea Vignau <mavignau@gmail.com>, 2015.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-15 10:58-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Ing María Andrea Vignau <mavignau@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: pyhello.py:34
+msgid ""
+"\n"
+"Copyright 2015 Ing María Andrea Vignau <mavignau@gmail.com>\n"
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+"html>\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law."
+msgstr ""
+"\n"
+"Copyright 2015 Ing María Andrea Vignau <mavignau@gmail.com>\n"
+"No hay NINGUNA garantía; ni siquiera de COMERCIABILIDAD o IDONEIDAD PARA UN\n"
+"FIN DETERMINADO. Se pueden redistribuir copias de GNU pyhello bajo los términos\n"
+"de la Licencia Pública General de GNU.\n"
+"Para más información sobre estas cuestiones, vea el fichero llamado COPYING."
+
+#: pyhello.py:43
+#, python-format
+msgid "Usage: %s [OPTION]...\n"
+msgstr "Modo de empleo: %s [OPCIÓN]\n\n"
+
+#: pyhello.py:44
+msgid "Print a friendly, customizable greeting.\n"
+msgstr "Imprime un saludo configurable\n"
+
+#: pyhello.py:46
+msgid "  -t, --traditional       use traditional greeting\n"
+msgstr "  -t, --traditional       usa el saludo tradicional\n"
+
+#: pyhello.py:47
+msgid "  -g, --greeting=TEXT     use TEXT as the greeting message\n"
+msgstr "  -g, --greeting=TEXT     usa el texto TEXT como mensaje de saludo\n"
+
+#: pyhello.py:49
+msgid "      --help     display this help and exit\n"
+msgstr "      --help     muestra esta ayuda y sale\n"
+
+#: pyhello.py:50
+msgid "      --version  output version information and exit\n"
+msgstr "      --version  muestra la información de versión y sale\n"
+
+#: pyhello.py:52
+msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+msgstr "Ayuda en general para usar el software GNU: <http://www.gnu.org/gethelp/>\n"
+
+#: pyhello.py:86
+msgid "hello, world"
+msgstr "hola, mundo"
+
+#: pyhello.py:92
+msgid "Hello, world!"
+msgstr "¡Hola, mundo!"
